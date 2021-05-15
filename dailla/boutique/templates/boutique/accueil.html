@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Daila page d'accueil</title>
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jquery -->
+
+
+    <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:1001px)" href="{% static 'css/dimensions.css' %}">
+    <link rel="stylesheet" type="text/css"  media="only screen and (min-width:50px) and (max-width:500px)" href="{% static 'css/dimensions_sm.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styling.css' %}">
+    <link rel="stylesheet" type="text/css"  media="only screen and (min-width:501px) and (max-width:1000px)" href="{% static 'css/dimensions_md.css' %}">
+    <!-- CSS -->
+
+    <!-- Parisienne - Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!-- Parisienne - Google fonts -->
+
+
+
+
+</head>
+<body>
+
+
+
+
+<div id="l1" style="position:absolute;left:25px;color:#E0115F;"><b>D</b></div>
+<div id="l2" style="display:None;position:absolute;left:75px;color:#E0115F;"><b>A</b></div>
+<div id="l3" style="display:None;position:absolute;left:125px;color:#E0115F;"><b>I</b></div>
+<div id="l4" style="display:None;position:absolute;left:175px;color:#E0115F;"><b>L</b></div>
+<div id="l5" style="display:None;position:absolute;left:225px;color:#E0115F;"><b>A</b></div>
+
+
+<script>
+$(document).ready(function(){
+    $("#l1").animate({bottom: '520px'},5000, function (){
+        $("#l2").show();
+        $("#l2").animate({bottom: '520px'},5000, function(){
+            $("#l3").show();
+            $("#l3").animate({bottom: '520px'},5000, function(){
+                $("#l4").show();
+                $("#l4").animate({bottom: '520px'},5000, function(){
+                    $("#l5").show();
+                    $("#l5").animate({bottom: '520px'},5000);
+                });
+            });
+        });
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+<!-- Navbar for the mobile and the laptop -->
+<nav class="navbar navbar-expand-lg navbar-light" id="mobile_nav">
+    <div class="container-fluid">
+
+        <a class="nav-link" id="nav_inv" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                      <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                  </svg>
+                  <b>Daila</b>
+        </a>
+
+
+        <button class="navbar-toggler custom-toggler" id="toggle_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <svg height="25" width="25">
+              <line x1="0" y1="1" x2="35" y2="1" style="stroke:#FFF8DC;stroke-width:2" />
+              <line x1="0" y1="10" x2="35" y2="10" style="stroke:#FFF8DC;stroke-width:2" />
+              <line x1="0" y1="20" x2="35" y2="20" style="stroke:#FFF8DC;stroke-width:2" />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" id="nav_inv" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                    </svg>
+            Articles
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_inv" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                    </svg>
+                    Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_inv" href="https://fr-fr.facebook.com/zonja.ebukur">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                    Facebook
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_inv" href="{% url 'entry:logout' %}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                      <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                    Déconnexion
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_inv" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+                      <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                    </svg>
+                    Enregistrement
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar for the mobile and the laptop -->
+
+<script>
+$(document).ready(function(){
+  $("#articles_jquery_button").click(function(){
+    $("#appear_disappear").show();
+    $("#articles_jquery_button").hide();
+  });
+});
+
+</script>
+
+
+<div class="container-fluid" id="navbar">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+              <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+            </svg>
+            Daila
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+            </svg>
+            Contact
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://fr-fr.facebook.com/zonja.ebukur" id="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+            Facebook
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'entry:logout' %}" id="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+              <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+            </svg>
+            Déconnexion
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+              <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+            </svg>
+            Enregistrement
+        </a>
+      </li>
+    </ul>
+</div>
+
+<br>
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <br><br><br><br>
+
+            <ul class="nav flex-column" style="display:None;" id="appear_disappear">
+              <li class="nav-item" >
+                <a class="nav-link active" href="#" id="articles">Jupes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Pantalons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Blousons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Manteaux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Accessoires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Chaussures</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Robes</a>
+              </li>
+            </ul>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" id="articles_jquery_button">Cliquez ici pour découvrir notre collection</a>
+              </li>
+            </ul>
+
+
+            <br><br>
+            <ul class="nav flex-column" id="col">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" id="articles">Jupes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Pantalons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Blousons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Manteaux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Accessoires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Chaussures</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="articles">Robes</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-8">
+            <center>
+
+
+
+                <h1 id="ruby_red">
+                    Bienvenu(e)s sur notre espace numérique!
+                </h1>
+                <br><br>
+                <img class="main_image" src="{% static 'images/daila2.jpeg' %}" alt="">
+            </center>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#dd").animate({bottom: '250px'});
+});
+</script>
+
+
+
+<br>
+<div class="container-fluid" id="color">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <br><br>
+            Souhaitez-vous suivre toujours les tendances de la mode?
+            Venez chez-nous et découvrez notre nouvelle collection!
+            <br><br><br><br>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+<br>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" >
+                  <img src="{% static 'images/daila1.jpeg' %}" class="d-block w-100" alt="Daila1">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/daila2.jpeg' %}" class="d-block w-100" alt="Daila2">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/daila3.jpeg' %}" class="d-block w-100" alt="Daila3">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<br>
+
+<div class="container-fluid"  id="color2">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4">
+            <br><br><br><br>
+            <b>Où sommes-nous?</b> <br>
+            Chaussée d'Alsemberg 698 <br> 1180 Uccle
+            <br> <br>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.547612666699!2d4.334607615654813!3d50.80249196981679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c5b2309fad1d%3A0xad9cfe346b5731e5!2sDaila!5e0!3m2!1sfr!2sbe!4v1620541278754!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="col-4">
+            <br><br><br><br>
+             <b>Newsletter</b>  <br>
+            Inscrivez-vous à notre newsletter pour bénéficier des nouveautés
+            des promotions et des conseils en avant-première. <br> <br>
+
+            <input type="text" id="form_newsletter"> <br> <br>
+            <button type="button" class="btn" href="" id="newsletter_register_button">S'inscrire</button>
+            <br><br><br><br><br>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+    <br><br><br><br><br>
+    <div class="container-fluid" id="color2">
+        <center>&copy; www.k-dim.be</center>
+    </div>
+    <br>
+
+</div>
+
+
+</body>
+</html>
